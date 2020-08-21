@@ -12,7 +12,7 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA perf
 	
 	
     # run the simple inference script
-	Record a head rotation video MP4 and put it in the "video" folder
+	Take a video of face rotation with a computer camera
     python video.py --image_name ./video/your_video_name.mp4
 
 ## Training
@@ -21,8 +21,9 @@ There is no need to model train
 
 ## Introduction
 
-1. Firstly, the Retinaface is used to advance the face frame, and then PFLD is used to identify the key points of the face. Finally, the key points are followed up to estimate the face pose. It is very easy to deploy and use, with high precision and fast speed.
+1. Firstly, the Retinaface is used to extract the face frame, and then PFLD is used to identify the key points of the face. Finally, the key points are followed up to estimate the face pose. It is very easy to deploy and use, with high precision and fast speed.
 2. We collected our own facial angle conversion data from hundreds of colleagues and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate.
+3. our program is capable of real-time performance and is able to run from a simple webcam without any specialist hardware.
 
 ## Performance
 
@@ -42,25 +43,10 @@ A1: Because the existing open source project identification error is large。
 
 **Q2: What exactly is the difference among this repository and the others?**
 
-A2: For example, these two are the most popular FacePose-pytorch,
-
-<https://github.com/>
-
-<https://github.com/>
-
-Here is the issues and why these are difficult to achieve good effect
-
-The first one:
-
-1. Dlib is not accurate for face key points recognition, and the error is large when the face is rotated or occluded.
-2. it is very inaccurate to compare the recognition of key points with a conventional 3D model.
-
-The second one:
-
-1. 
-
-2. 
-
+A2: For example, Here are some of the common methods used by other open source projects:
+1. Dlib:It is not accurate for face key points recognition, and the error is large when the face is rotated or occluded.
+2. Virtual 3D model:it is very inaccurate to compare the recognition of key points with a "2D to 3D Virtual fix model",because everyone has a different face.
+3. Through the convolution network statistics face key point bitmap, the angle is also very inaccurate.
 
 
 **Q3: What should I do when I find a bug?**
