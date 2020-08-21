@@ -26,13 +26,12 @@ class Detection:
         self.detector.setInput(blob, 'data')
         out = self.detector.forward('detection_out').squeeze()
         max_conf_index = np.argmax(out[:, 2])
-        left, top, right, bottom = out[max_conf_index, 3]*width, out[max_conf_index, 4]*height, \
+        left, top, right, bottom = out[max_conf_index, 3]*width, out[max_conf_index, 4]*height,out[max_conf_index, 5]*width, out[max_conf_index, 6]*height
         bbox = [int(left), int(top), int(right-left+1), int(bottom-top+1)]
         return bbox
 
 class AntiSpoofPredict(Detection):
     def __init__(self, device_id):
         super(AntiSpoofPredict, self).__init__()
-        self.device = torch.device("cuda:{}".format(device_id)
-                                   if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:{}".format(device_id) if torch.cuda.is_available() else "cpu")
 

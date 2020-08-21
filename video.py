@@ -84,6 +84,7 @@ def main(args):
     videoWriter = cv2.VideoWriter("./video/result.avi",cv2.VideoWriter_fourcc('X','V','I','D'),fps,size)
 
     success,img = videoCapture.read()
+    cv2.imwrite("1.jpg",img)
     while success:
         height, width = img.shape[:2]
         model_test = AntiSpoofPredict(args.device_id)
