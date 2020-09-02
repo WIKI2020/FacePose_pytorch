@@ -39,7 +39,9 @@ There is no need to model train
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/1.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/2.jpg)
 
-
+#### TODO:
+- [ ] Training details
+- [ ] estimate details
 
 ## FAQ
 
