@@ -6,7 +6,8 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA perf
 ## Demo
 
     # install requirements
-    pip install numpy opencv-python
+    First install Anaconda3, python 3.7,and then:
+    pip install numpy opencv-python 
     pip install torch==1.4.0
     pip install torchvision==0.5.0
 	
