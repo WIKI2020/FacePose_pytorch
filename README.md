@@ -13,12 +13,13 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA perf
 	
 	
     # run the simple inference script
-	Take a video of face rotation with a computer camera
+    Take a video of face rotation with a computer camera,and put it into video file
     python video.py --image_name ./video/your_video_name.mp4
+    (tips:You can modify video.py file, used to infer pictures)
 
 ## Training
 
-There is no need to model train
+There is no need to model train(Using the open source model)
 
 ## Introduction
 
