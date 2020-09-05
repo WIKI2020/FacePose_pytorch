@@ -14,12 +14,12 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA perf
 	
     # run the simple inference script
     Take a video of face rotation with a computer camera,and put it into video file
-    python video.py --image_name ./video/your_video_name.mp4
-    (tips:You can modify video.py file, used to infer pictures)
+    CUDA_VISIBLE_DEVICE=0 python video.py --image_name ./video/your_video_name.mp4
+    (tips:You can modify video.py file to infer pictures)
 
 ## Training
 
-There is no need to model train(Using the open source model)
+There is no need to model train(Using the open source model is enough)
 
 ## Introduction
 
@@ -30,7 +30,7 @@ There is no need to model train(Using the open source model)
 ## Performance
 
     # speed
-    type	Nvidia-V100
+    GPU type	Nvidia-V100
     fps/s	90
 	
     # Angle error(yaw,roll,pitch)
@@ -40,6 +40,13 @@ There is no need to model train(Using the open source model)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/0.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/1.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/2.jpg)
+   ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/3.jpg)
+
+## Other Project
+The following is a list of some classic face pose detection items, you can compare the effect by yourself
+OpenFace:[https://github.com/TadasBaltrusaitis/OpenFace]
+Dlib:[https://github.com/KeeganRen/FaceReconstruction]
+3DDFA_V2:[https://github.com/cleardusk/3DDFA_V2]
 
 ## TODO
 - [ ] Training details
