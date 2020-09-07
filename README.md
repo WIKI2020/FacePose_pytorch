@@ -44,9 +44,9 @@ There is no need to model train(Using the open source model is enough)
 
 ## Other Project
 The following is a list of some classic face pose detection items, you can compare the effect by yourself
-OpenFace:[https://github.com/TadasBaltrusaitis/OpenFace]
-Dlib:[https://github.com/KeeganRen/FaceReconstruction]
-3DDFA_V2:[https://github.com/cleardusk/3DDFA_V2]
+OpenFace:[https://github.com/TadasBaltrusaitis/OpenFace]  
+Dlib:[https://github.com/KeeganRen/FaceReconstruction]  
+3DDFA_V2:[https://github.com/cleardusk/3DDFA_V2]  
 
 ## TODO
 - [ ] Training details
