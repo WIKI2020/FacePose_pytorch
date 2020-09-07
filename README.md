@@ -28,13 +28,9 @@ There is no need to model train(Using the open source model is enough)
 3. our program is capable of real-time performance and is able to run from a simple webcam without any specialist hardware.
 
 ## Performance
-
-    # speed
-    GPU type	Nvidia-V100
-    fps/s	90
 	
-    # Angle error(yaw,roll,pitch)
-    -3°~+3°
+    GPU type     | fps/s  | Angle error(yaw,roll,pitch)
+    Nvidia-V100  | 90     | -3°~+3° 
 
 ## Example
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/0.jpg)
@@ -43,7 +39,7 @@ There is no need to model train(Using the open source model is enough)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/3.jpg)
 
 ## Other Project
-The following is a list of some classic face pose detection items, you can compare the effect by yourself
+The following is a list of some classic face pose detection items, you can compare the effect by yourself  
 OpenFace:[https://github.com/TadasBaltrusaitis/OpenFace]  
 Dlib:[https://github.com/KeeganRen/FaceReconstruction]  
 3DDFA_V2:[https://github.com/cleardusk/3DDFA_V2]  
@@ -57,14 +53,15 @@ Dlib:[https://github.com/KeeganRen/FaceReconstruction]
 
 **Q1. Why implement this while there are several FacePose projects already.**
 
-A1: Because the existing open source project identification error is large。
+A1: Because the existing open source project identification error is big。
 
 **Q2: What exactly is the difference among this repository and the others?**
 
 A2: For example, Here are some of the common methods used by other open source projects:
-1. Dlib:It is not accurate for face key points recognition, and the error is large when the face is rotated or occluded.
+1. Dlib:It is not accurate for face key points recognition, and the error is large when the face is rotated or roll.
 2. Virtual 3D model:it is very inaccurate to compare the recognition of key points with a "2D to 3D Virtual fix model",because everyone has a different face.
-3. Through the convolution network statistics face key point bitmap, the angle is also very inaccurate.
+3. 3DDFA:The effect is poor,I don't know why there are so many "github stars".
+4. Through the convolution network statistics face key point bitmap, the angle is also very inaccurate.
 
 
 **Q3: What should I do when I find a bug?**
