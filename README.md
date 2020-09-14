@@ -4,7 +4,7 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA perf
 
 ## Update Log
 
-[2020/09/12]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
+[2020/09/14]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
 We will release the ultra-high precision model in October or November. If you need, please add a github star and leave email, I will send it to you separately.  
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/y1.jpg)
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/y2.jpg)
@@ -43,7 +43,6 @@ There is no need to model train(Using the open source model is enough)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/0.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/1.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/2.jpg)
-   ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/3.jpg)
 
 ## Other Project
 The following is a list of some classic face pose detection items, you can compare the effect by yourself  
