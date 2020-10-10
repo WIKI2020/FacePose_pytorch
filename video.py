@@ -77,7 +77,7 @@ def main(args):
     plfd_backbone.eval()
     plfd_backbone = plfd_backbone.to(device)
     transform = transforms.Compose([transforms.ToTensor()])
-    videoCapture = cv2.VideoCapture(args.image_name)
+    videoCapture = cv2.VideoCapture(args.video_name)
     fps = videoCapture.get(cv2.CAP_PROP_FPS)
     size = (int(videoCapture.get(cv2.CAP_PROP_FRAME_WIDTH)),int(videoCapture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
     print("fps:",fps,"size:",size)
@@ -168,9 +168,9 @@ def parse_args():
         default="./checkpoint/snapshot/checkpoint.pth.tar",
         type=str)
     parser.add_argument(
-        '--image_name',
+        '--video_name',
         type=str,
-        default="./video/1.jpg")
+        default="./video/1.mp4")
     parser.add_argument(
         "--device_id",
         type=int,

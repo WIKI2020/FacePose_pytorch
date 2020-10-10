@@ -21,7 +21,7 @@ We will release the ultra-high precision model in October or November. If you ne
 	
     # run the simple inference script
     Take a video of face rotation with a computer camera,and put it into video file
-    CUDA_VISIBLE_DEVICE=0 python video.py --image_name ./video/your_video_name.mp4
+    CUDA_VISIBLE_DEVICE=0 python video.py --video_name ./video/your_video_name.mp4
     (tips:You can modify video.py file to infer pictures)
 
 ## Training
