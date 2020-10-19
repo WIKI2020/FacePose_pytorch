@@ -73,3 +73,8 @@ A2: For example, Here are some of the common methods used by other open source p
 **Q3: What should I do when I find a bug?**
 
 A3: Check out the update log if it's been fixed, then pull the latest code to try again. If it doesn't help, create a new issue and describe it in detail.
+
+
+## Contribution
+Many thanks to ElonMusk,RobertDowney,huangwj and wangz for contributing and revising to the code and English documentation.
+
