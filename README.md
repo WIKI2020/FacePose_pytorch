@@ -31,7 +31,7 @@ There is no need to model train(Using the open source model is enough)
 ## Introduction
 
 1. Firstly, the Retinaface is used to extract the face frame, and then PFLD is used to identify the key points of the face. Finally, the key points are followed up to estimate the face pose. It is very easy to deploy and use, with high precision and fast speed.
-2. We collected our own facial angle conversion data from hundreds of colleagues and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate.
+2. We collected our own facial angle conversion data from hundreds of people and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate.
 3. our program is capable of real-time performance and is able to run from a simple webcam without any specialist hardware.
 
 ## Performance
