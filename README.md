@@ -1,11 +1,14 @@
 # FacePose_pytorch
 
-The pytorch implement of the head pose estimation(yaw,roll,pitch) with SOTA performance in real time.Easy to deploy, easy to use, and high accuracy.
+The pytorch implement of the head pose estimation(yaw,roll,pitch) and emotion detection with SOTA performance in real time.Easy to deploy, easy to use, and high accuracy.Solve all problems of face detection at one time.(极简，极快，高效是我们的宗旨)
 
 ## Update Log
 
-[2020/09/14]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
-We will release the ultra-high precision model in October or November. If you need, please add a github star and leave email, I will send it to you separately.  
+[2020/11]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
+
+The head angle, especially the accuracy of facial emotion recognition, has reached the world's top level(欢迎比对，测试不准的留言怼我). However, for some reasons, we only open source prediction code.  
+ 
+We will release the ultra-high precision model in future(Including angles and emotion). If you need, please add a github star and leave email, I will send it to you separately.  
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/y1.jpg)
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/y2.jpg)
 
@@ -17,30 +20,37 @@ We will release the ultra-high precision model in October or November. If you ne
     pip install numpy opencv-python 
     pip install torch==1.4.0
     pip install torchvision==0.5.0
+    Download the emoticon model (the angle model is already in the code):[https://pan.baidu.com/s/1oxznkRcP5w8lzYMAjj87-w],accesscode:WIKI
 	
 	
-    # run the simple inference script
+    # run the simple inference script(angel)
     Take a video of face rotation with a computer camera,and put it into video file
     CUDA_VISIBLE_DEVICE=0 python video.py --video_name ./video/your_video_name.mp4
     (tips:You can modify video.py file to infer pictures)
 
+    # run the simple inference script(emothon)
+    Download the emoticon model into checkpoint file,and(If you use your own photo, you need to cut out the face from the picture or use Retinaface to detection the face first. You can look at it in video.py)
+    CUDA_VISIBLE_DEVICE=0 python emotion.py --img ./img/surprise.jpg
+
 ## Training
 
-There is no need to model train(Using the open source model is enough)
+There is no need to model train(Using my model is enough)
 
 ## Introduction
 
 1. Firstly, the Retinaface is used to extract the face frame, and then PFLD is used to identify the key points of the face. Finally, the key points are followed up to estimate the face pose. It is very easy to deploy and use, with high precision and fast speed.
 2. We collected our own facial angle conversion data from hundreds of people and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate.
-3. our program is capable of real-time performance and is able to run from a simple webcam without any specialist hardware.
+3. At the same time, referring to several papers published in the United States summit in 2020, we developed a highly accurate emotion recognition model. Results show that the methods with 95% on raf-db, 80% on affectnet, and 98% on ferplus.
+
 
 ## Performance
 	
-    GPU type     | fps/s  | Angle error(yaw,roll,pitch)
-    Nvidia-V100  | 90     | -3°~+3° 
+    GPU type     | fps/s  | Angle error(yaw,roll,pitch)| emotion
+    Nvidia-V100  | 90     | -3°~+3°                  | 95% on average
 
 ## Example
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/0.jpg)
+   ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/emo.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/1.jpg)
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/2.jpg)
 
@@ -50,9 +60,6 @@ OpenFace:[https://github.com/TadasBaltrusaitis/OpenFace]
 Dlib:[https://github.com/KeeganRen/FaceReconstruction]  
 3DDFA_V2:[https://github.com/cleardusk/3DDFA_V2]  
 
-## TODO
-- [ ] Training details
-- [ ] estimate details
 
 ## FAQ
 
