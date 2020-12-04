@@ -6,7 +6,7 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) and emotion de
 
 [2020/11]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
 
-The head angle, especially the accuracy of facial emotion recognition, has reached the world's top level(欢迎比对，表情测试不准的留言怼我). However, for some reasons, we only open source prediction code.  
+The head angle, especially the accuracy of facial emotion recognition, has reached the world's top level. However, for some reasons, we only open source prediction code.  
  
 We will release the ultra-high precision model in future(Including angles and emotion). If you need, please add a github star and leave email, I will send it to you separately.  
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/y1.jpg)
