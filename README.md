@@ -3,7 +3,11 @@
 The pytorch implement of the head pose estimation(yaw,roll,pitch) and emotion detection with SOTA performance in real time.Easy to deploy, easy to use, and high accuracy.Solve all problems of face detection at one time.(极简，极快，高效是我们的宗旨)
 
 ## Update Log
-
+[2020/12]We found a better algorithm for face key points(estimates 468 3D face landmarks in real-time even on CPU or mobile devices).  
+pip install mediapipe  
+python newdectect.y  
+You can replace the pfld algorithm(this GitHub) by yourself.  
+![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/face.jpg)  
 [2020/11]congratulate! The algorithm has been applied to the following two products: online education for children, which is used to identify whether children listen carefully; on-site meeting or school classroom, to judge the quality of speech.  
 
 The head angle, especially the accuracy of facial emotion recognition, has reached the world's top level. However, for some reasons, we only open source prediction code.  
