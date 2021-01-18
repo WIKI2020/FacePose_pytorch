@@ -4,9 +4,9 @@ The pytorch implement of the head pose estimation(yaw,roll,pitch) and emotion de
 
 ## Update Log
 [2020/12]We found a better algorithm for face key points(estimates 468 3D face landmarks in real-time even on CPU or mobile devices).  
-#First install Anaconda3, python 3.7
-pip install mediapipe  
-python newdectect.y  (run on cpu)
+#First install Anaconda3, python 3.7  
+pip install mediapipe   
+python newdectect.y  (run on cpu)  
 You can replace the pfld algorithm(this GitHub) by yourself.  
 ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/face.gif) 
  
