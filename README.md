@@ -45,7 +45,7 @@ There is no need to model train(Using my model is enough)
 ## Introduction
 
 1. Firstly, the Retinaface is used to extract the face frame, and then PFLD is used to identify the key points of the face. Finally, the key points are followed up to estimate the face pose. It is very easy to deploy and use, with high precision and fast speed.
-2. We collected our own facial angle conversion data from hundreds of people and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate.
+2. We collected our own facial angle conversion data from hundreds of people and fit a simple linear model through the rotation key points of hundreds of people's faces.Experiments show that the simple mathematical linear point model is more efficient and accurate(You can also use GBDT or other algorithms to regression).
 3. At the same time, referring to several papers published in the United States summit in 2020, we developed a highly accurate emotion recognition model. Results show that the methods with 95% on raf-db, 80% on affectnet, and 98% on ferplus.At present, we predict seven kinds of expressions: "surprise", "fear", "strange", "happiness", "Sadness", "anger" and "neutral".
 
 
@@ -72,7 +72,7 @@ Dlib:[https://github.com/KeeganRen/FaceReconstruction]
 
 **Q1. Why implement this while there are several FacePose projects already.**
 
-A1: Because the existing open source project identification error is big。
+A1: Because the existing open source project identification error is big.And this is a Key point detection and expression detection integration project.
 
 **Q2: What exactly is the difference among this repository and the others?**
 
