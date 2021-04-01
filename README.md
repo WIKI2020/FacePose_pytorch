@@ -52,7 +52,7 @@ There is no need to model train(Using my model is enough)
 ## Performance
 	
     GPU type     | fps/s  | Angle error(yaw,roll,pitch)| emotion
-    Nvidia-V100  | 90     | -3°~+3°                  | 95% on average
+    Nvidia-V100  | 90     | -3°~+3°                    | 95% on average
 
 ## Example
    ![image](https://github.com/WIKI2020/FacePose_pytorch/blob/master/img/emo.jpg)
@@ -88,5 +88,5 @@ A3: Check out the update log if it's been fixed, then pull the latest code to tr
 
 
 ## Contribution
-Many thanks to ElonMusk,RobertDowney,huangwj and wangz for contributing and revising to the code and English documentation.
+Many thanks to ElonMusk,huangwj and wangz for contributing and revising to the code and English documentation.
 
