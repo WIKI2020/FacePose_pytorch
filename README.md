@@ -37,6 +37,8 @@ We will release the ultra-high precision model in future(Including angles and em
     # run the simple inference script(emotion)
     Download the emoticon model into checkpoint file,and(If you use your own photo, you need to cut out the face from the picture or use Retinaface to detection the face first. You can look at it in video.py)
     CUDA_VISIBLE_DEVICE=0 python emotion.py --img ./img/surprise.jpg
+    
+    At present, only one face is supported. You can try to modify the code to support the angle and expression recognition of multiple faces. It may be a bit complicated.
 
 ## Training
 
